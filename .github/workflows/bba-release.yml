@@ -21,7 +21,7 @@ jobs:
         with:
           esp_idf_version: v5.1.4
           target: esp32
-          command: idf.py update-dependencies build
+          command: idf.py set-target esp32s3 && idf.py update-dependencies build
       - name: Archive binaries
         run: |
           zip --junk-paths binaries /app/ctag-fh-kiel/ctag-tbd/build/*.bin /app/ctag-fh-kiel/ctag-tbd/build/bootloader/*.bin /app/ctag-fh-kiel/ctag-tbd/build/partition_table/*.bin
