@@ -20,7 +20,7 @@ jobs:
         uses: espressif/esp-idf-ci-action@v1.1.0
         with:
           esp_idf_version: v5.5.1
-          target: esp32
+          target: esp32s3
           command: idf.py set-target esp32s3 && idf.py update-dependencies build
       - name: Archive binaries
         run: |
