@@ -1,4 +1,4 @@
-name: draft-release
+name: bba-release
 
 on:
   workflow_dispatch:
